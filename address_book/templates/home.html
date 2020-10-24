@@ -20,7 +20,7 @@
       {{ records.state }}<br/>
       {{ records.zipcode }}<br/>
     </p>
-    <a href="#" class="btn btn-primary">Edit</a>
+    <a href="{% url 'edit' records.id %}" class="btn btn-primary">Edit</a>
   </div>
 </div>
 <br/>
