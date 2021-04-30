@@ -8,25 +8,41 @@
 <form method="POST">
 	{% csrf_token %}
 
+<!--<div class="card">
+    <div class="card-body">
+    <p class="card-text" type="text">
+        {{ get_address.name }}<br/>
+        {{ get_address.name }}<br/>
+    </p>
+ </div>
+</div>-->
 
-  <div class="form-group">
+<br/>
+
+<div class="form-group">
     <input type="text" class="form-control" id="emailhelp" value="{{ get_address.name }}" name="name">
  </div>
+
 <div class="form-group">
     <input type="text" class="form-control" id="emailhelp" value="{{ get_address.email }}" name="email">
  </div>
-<div class="form-group">
+
+ <div class="form-group">
     <input type="text" class="form-control" id="emailhelp" value="{{ get_address.phone }}" name="phone">
  </div>
+
  <div class="form-group">
-    <input type="text" class="form-control"  id="emailhelp" value="{{ get_address.address }}" name="address">
+    <input type="text" class="form-control" id="emailhelp" value="{{ get_address.address }}" name="address">
  </div>
+
 <div class="form-group">
     <input type="text" class="form-control" id="emailhelp" value="{{ get_address.city }}" name="city">
  </div>
+
 <div class="form-group">
     <input type="text" class="form-control"  id="emailhelp" value="{{ get_address.state }}" name="state">
  </div>
+
 <div class="form-group">
     <input type="text" class="form-control"  id="emailhelp" value="{{ get_address.zipcode }}" name="zipcode">
  </div>
